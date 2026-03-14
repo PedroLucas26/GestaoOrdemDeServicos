@@ -2,6 +2,8 @@ package dev.java.GestaoOrdemDeServico;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 //Entity transforma uma classe em uma entidade do BD
 @Entity
 @Table(name = "tb_cadastro_de_tecnicos")
@@ -13,6 +15,7 @@ public class TecnicoModel {
     private String nome;
     private String idade;
     private String cargo;
+    private List<OrdensModel> orderns;
 
     public TecnicoModel() {
     }
@@ -48,4 +51,4 @@ public class TecnicoModel {
     }
 }
 
-}
+
