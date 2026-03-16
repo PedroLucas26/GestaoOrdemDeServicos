@@ -1,5 +1,6 @@
 package dev.java.GestaoOrdemDeServico;
 
+import dev.java.GestaoOrdemDeServico.Ordens.OrdensModel;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -15,6 +16,7 @@ public class TecnicoModel {
     private String nome;
     private String idade;
     private String cargo;
+    @OneToMany
     private List<OrdensModel> orderns;
 
     public TecnicoModel() {
