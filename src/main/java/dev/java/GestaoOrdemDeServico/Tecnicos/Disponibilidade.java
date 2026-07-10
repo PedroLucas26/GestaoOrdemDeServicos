@@ -1,4 +1,7 @@
 package dev.java.GestaoOrdemDeServico.Tecnicos;
 
-public enum disponibilidade {
+public enum Disponibilidade {
+    DISPONIVEL,
+    ALOCADO,
+    FERIAS
 }
